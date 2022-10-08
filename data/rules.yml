@@ -1,0 +1,69 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: supplier_equipment
+  steps:
+  - intent: supplier_equipment_request_relation
+  - action: supplier_equipment_relation_form
+
+- rule: company_chemical
+  steps:
+  - intent: company_chemical_request_relation
+  - action: company_chemical_relation_form
+
+- rule: company_chemical
+  steps:
+  - intent: company_supplier_request_relation
+  - action: company_supplier_relation_form
+
+- rule: company_attr
+  steps:
+  - intent: company_request_attr
+  - action: company_industry_form
+
+- rule: company_attr
+  steps:
+  - intent: equipment_chemical_request_relation
+  - action: chemical_equipment_relation_form
+
+
+- rule: company_attr
+  steps:
+  - intent: get_supplier_by_city_and_product
+  - action: get_supplier_by_city_and_product_form
+
+- rule: company_attr
+  steps:
+  - intent: get_chemical_by_chmc_poison
+  - action: chemical_by_chmc_poison_form
+
+- rule: company_attr
+  steps:
+  - intent: company_zone_request_relation
+  - action: company_zone_request_relation_form
+
+- rule: company_attr
+  steps:
+  - intent: chemical_zone_request_relation
+  - action: chemical_zone_relation_form
+
+- rule: company_attr
+  steps:
+  - intent: get_chemical_chmc_boiling_attr
+  - action: chemical_chmc_boiling_attr_form
+
+- rule: company_attr
+  steps:
+  - intent: max_or_min_chemical_chmc_boiling_attr
+  - action: max_or_min_chemical_chmc_boiling_attr_form
