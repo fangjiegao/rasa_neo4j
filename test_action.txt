@@ -1,0 +1,35 @@
+# coding=utf-8
+
+REQUEST_URL = "http://localhost:5005/webhooks/rest/webhook"
+HEADERS = {'Content-Type': 'application/json; charset=utf-8'}
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": "今天南京天气"}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": "锅炉1由哪些供应商提供"}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": "沸点大于300的化学"}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": "富士通合作企业有哪些"}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": "京博石化有限公司的行业属性，有多少员工"}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": "生产硫酸的设备是什么型号"}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": "总部在日本能提供稀有原料的供应商有哪几家"}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": "有毒化学品有哪些"}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": "中国石油公司在那个园区"}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": "有甲醇的企业所在的园区的地址"}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": "酒精的沸点是多少"}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": "沸点最高的化学品"}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": "沸点最高的化学原料"}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": "沸点低于100的化学品"}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+
+curl -H "Content-Type:application/json" -H "Data_Type:msg" -XPOST --data '{"sender": "gfj", "message": ""}' http://localhost:5005/webhooks/rest/webhook | native2ascii -encoding UTF-8 -reverse
+

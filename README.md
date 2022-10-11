@@ -24,8 +24,8 @@ There is extensive documentation:
 1. clone project and install requirements
 
 ```bash
-git clone https://github.com/fangjiegao/rasa_neo4j.git
-cd rasa_neo4j
+git clone https://github.com/luojie1024/WeatherBot.git
+cd WeatherBot
 pip install -r requirements.txt
 ```
 
@@ -39,15 +39,17 @@ pip install -r requirements.txt
 ```
 rasa train --num-threads 4
 ```
-/Users/sherry/PycharmProjects/rasa-neo4j/rasa/__main__.py train --config config.yml --domain domain.yml --data data/
+/Users/sherry/PycharmProjects/rasa-chat/rasa/__main__.py train --config config.yml --domain domain.yml --data data/
+![-w1620](http://roger-markdown.oss-cn-beijing.aliyuncs.com/2020/12/26/16088726901168.jpg)
 
 3. Run the raas action server:
 
 ```
 rasa run actions
 ```
-/Users/sherry/PycharmProjects/rasa-neo4j/rasa/__main__.py run --port 5005 --endpoints endpoints.yml --credentials credentials.yml --debug
-/Users/sherry/PycharmProjects/rasa-neo4j/rasa/__main__.py run actions --port 5055 --actions actions --debug
+/Users/sherry/PycharmProjects/rasa-chat/rasa/__main__.py run --port 5005 --endpoints endpoints.yml --credentials credentials.yml --debug
+/Users/sherry/PycharmProjects/rasa-chat/rasa/__main__.py run actions --port 5055 --actions actions --debug
+![-w1081](http://roger-markdown.oss-cn-beijing.aliyuncs.com/2020/12/26/16088733885511.jpg)
 
 
 4. Open a new terminal and now you can curl results from the server, for example:
