@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A simple Chinese weather robot (chatbot) built using Rasa technology stack (Rasa2.0, Rasa X, Slack) 
+A simple Chinese robot (chatbot) built using Rasa technology stack (Rasa2.7, Rasa X, Slack) 
 
 ## Setup
 
