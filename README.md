@@ -25,7 +25,6 @@ pip install -r requirements.txt
 rasa train --num-threads 4
 ```
 /Users/sherry/PycharmProjects/rasa-neo4j/rasa/__main__.py train --config config.yml --domain domain.yml --data data/
-![-w1620](http://roger-markdown.oss-cn-beijing.aliyuncs.com/2020/12/26/16088726901168.jpg)
 
 3. Run the raas action server:
 
